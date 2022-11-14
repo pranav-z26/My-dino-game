@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+.game {
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 2rem;
+}
+
+#dino {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    background-image: url('https://freight.cargo.site/t/original/i/55008a8778d0e8a1bef075e7a1e501587d83b9b3fb0051835de835b7fd10a7be/Dino_Horse.gif');
+    background-size: 60px 60px;
+    position: relative;
+    top: 150px;
+}
+.ground{
+    /* border: 2px solid black; */
+    width: 600px;
+    height: 60px;
+    position: relative;
+    top: 60px;
+    background-image: url('https://miro.medium.com/max/1200/1*ENycPFvoQXw4s4i56Kju7Q.gif');
+    background-size: 600px 60px;
+    z-index: -2;
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 110px;
+    }
+
+    50% {
+        top: 60px;
+    }
+
+    80% {
+        top: 110px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
+#cactus {
+    width: 60px;
+    height: 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    /* background-color: red; */
+
+    background-image: url("https://thumbs.gfycat.com/BiodegradableShadyApisdorsatalaboriosa-size_restricted.gif");
+    background-size: 60px 40px;
+
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 580px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
+.content{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Silkscreen', cursive;
+    color:darkslategrey;
+}
+.content2{
+    text-align: center;
+    font-size: 2rem;
+    color:darkslategrey;
+}
+span{
+    font-size: small;
+    display: block;
+}

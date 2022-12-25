@@ -7,7 +7,7 @@ function jump() {
 
         setTimeout(function () {
             dino.classList.remove("jump");
-        }, 300);
+        }, 500);
     }
 }
 
@@ -23,10 +23,14 @@ let isAlive = setInterval(function () {
     // detect collision
     if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
         // collision
-        alert("Game Over!");
+        alert("Game Over! Reload to play again");
+        document.querySelector('.heading').innerHTML = "Game Over, Reload to play again";
     }
 }, 10);
 
 document.addEventListener("keydown", function (event) {
+    jump();
+});
+document.addEventListener("click", function (event) {
     jump();
 });
